@@ -114,7 +114,7 @@ def proxy(path: str):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="TMDB Proxy for Jellyfin")
     parser.add_argument("--host", default="0.0.0.0", help="바인딩 주소 (기본: 0.0.0.0)")
-    parser.add_argument("--port", type=int, default=5000, help="포트 번호 (기본: 5000)")
+    parser.add_argument("--port", type=int, default=21514, help="포트 번호 (기본: 21514)")
     parser.add_argument("--debug", action="store_true", help="디버그 모드")
     args = parser.parse_args()
 
